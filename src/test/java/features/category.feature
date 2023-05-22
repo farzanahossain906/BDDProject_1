@@ -19,7 +19,7 @@ Feature: category
 #        | Jewelry           | https://demo.nopcommerce.com/jewelry           | Jewelry           |
 #        | Gift Cards        | https://demo.nopcommerce.com/gift-cards        | Gift Cards        |
 
-  @hovercategory
+  @hoverCategory
   Scenario: hoverActions
   When I hover over "Computers" category link
   When I click "Notebooks" link
