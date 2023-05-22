@@ -57,7 +57,9 @@ public class Utils extends DriverManager {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeInSec));
         wait.until(ExpectedConditions.elementToBeClickable(by));
     }
-
+    public static String getUrl() {
+        return driver.getCurrentUrl();
+    }
     public static String currentTimeStamp() {
         Date date = new Date();
         SimpleDateFormat sdf = new

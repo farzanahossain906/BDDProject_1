@@ -5,14 +5,18 @@ import io.cucumber.java.Scenario;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
+import java.net.MalformedURLException;
+
 import static org.example.BasePage.driver;
 
 public class Hooks{
     DriverManager driverManager=new DriverManager();
     @Before
-    public void setUp(){
+    public void setUp() throws MalformedURLException {
 
-        driverManager.openBrowser();
+
+            driverManager.openBrowser();
+
     }
     @After
     public void tearDown(Scenario scenario) {

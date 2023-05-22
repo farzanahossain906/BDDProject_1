@@ -11,7 +11,7 @@ public class LoadProp {
     static FileInputStream input;
     static String propertiesFileLocation="src/test/java/TestConfig/TestData.properties";
 
-    public String getProperty(String key){
+    public static String getProperty(String key){
         try{
             input=new FileInputStream(propertiesFileLocation);
             properties.load(input);

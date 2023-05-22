@@ -1,7 +1,5 @@
 package org.example;
-
 import org.openqa.selenium.By;
-
 public class RegistrationPage extends Utils{
     LoadProp loadProp=new LoadProp();
     //declaring x path locators
